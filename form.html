@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="action_page.php" method="get"><!--যদি ব্যবহারকারী নাম ও ইমেইল লিখে সাবমিট করে, তাহলে ডাটাগুলো action_page.php ফাইলে যাবে,-->
+        <div>
+            <lebel for="fname">Your Name:</lebel>
+            <input type="text" id="fname" name=fname" placeholder="alvir">
+        </div>
+        <br>
+        <div>
+            <lebel for="lname">Last name:</lebel>
+            <input type="text" id="lname" name="lname" placeholder="shahriar">
+            <!--এটি একটি টেক্সট ইনপুট ফিল্ড, যেখানে ব্যবহারকারী নাম লিখতে পারবেন।
+            type="text"	এটি একটি সাধারণ টেক্সট ইনপুট তৈরি করে।
+            id="fname"	এটি ইউনিক আইডি, যা label এর for অ্যাট্রিবিউটের সাথে সংযুক্ত।
+            name="fname"	এটি ডাটা সাবমিট করার সময় সার্ভারে পাঠানো হবে।
+            placeholder="Alvir"	এটি ইনপুট বক্সে নির্দেশনা দেয় (ডিফল্ট টেক্সট)।-->
+        </div>
+        <br>
+        <div>
+            <lebel for="Phonenumber" >PhoneNumber :</lebel>
+            <input type="Number" id="phonenumber" name="phonenumber" placeholder="+880">
+        </div>
+        <br>
+        <div>
+            <lebel for="bdate" >Birth Date:</lebel>
+            <input type="date" id="bdate" name="bdate">
+        </div>
+        <br>
+        <div>
+            <lebel for="email" >Email :</lebel>
+            <input type="email" id="phonenumber" name="email" placeholder="abc@gmail.com">
+        </div>
+        <br>
+        <div>
+            <lebel for="pass" >Password :</lebel>
+            <input type="pass" id="pass" name="passr">
+        </div>
+        <br>
+        <div>
+            <lebel for="quantity" >quantity :</lebel>
+            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+        </div>
+        <br>
+        <div>
+            <lebel for="title">Title </lebel>
+            <lebel for="MR.">Mr.</lebel>
+            <input type="radio" id="Mr." name="title" value="Mr."><!--name=title dichi jathe ektatr beshi select kora na jai-->
+            <lebel for="Mrs.">Mrs.</lebel>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+        <br>
+        <br>
+        <div>
+            <lebel for="Payment" >Payment:</lebel>
+            <select id="Payment" name="payment">
+                <option value="Cash on Delivery">Cash on delivery </option>
+                <option value="Bkash">BKash</option>
+                <option value="Upai">Upai </option>
+            </select>
+        </div>
+        <br>
+        <dir>
+            <lebel for="Sure">I am sure</lebel>
+            <input type="checkbox" id="Sure" name="Sure">
+        </dir>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+
+</html>
